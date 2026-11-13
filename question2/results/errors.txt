@@ -1,0 +1,6 @@
+$ ./copy_sys missing.bin out.bin 4096
+missing.bin: No such file or directory
+exit status: 1
+$ ./copy_stdio missing.bin out.bin 4096
+missing.bin: No such file or directory
+exit status: 1

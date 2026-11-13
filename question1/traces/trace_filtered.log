@@ -1,0 +1,183 @@
+249   execve("./pipeline", ["./pipeline"], 0xffffc6cd6bd0 /* 4 vars */) = 0
+249   openat(AT_FDCWD</work/project2_assignment/question1>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+249   close(3</etc/ld.so.cache>)        = 0
+249   openat(AT_FDCWD</work/project2_assignment/question1>, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libc.so.6>
+249   read(3</usr/lib/aarch64-linux-gnu/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360\206\2\0\0\0\0\0"..., 832) = 832
+249   close(3</usr/lib/aarch64-linux-gnu/libc.so.6>) = 0
+249   pipe2([3<pipe:[1616059]>, 4<pipe:[1616059]>], 0) = 0
+249   pipe2([5<pipe:[1616060]>, 6<pipe:[1616060]>], 0) = 0
+249   pipe2([7<pipe:[1616061]>, 8<pipe:[1616061]>], 0) = 0
+249   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xf60d64974fb0) = 250
+249   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+250   dup3(4<pipe:[1616059]>, 1</dev/null>, 0) = 1<pipe:[1616059]>
+249   <... clone resumed>, child_tidptr=0xf60d64974fb0) = 251
+250   close(3<pipe:[1616059]> <unfinished ...>
+249   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+250   <... close resumed>)              = 0
+251   dup3(3<pipe:[1616059]>, 0</dev/null>, 0 <unfinished ...>
+249   <... clone resumed>, child_tidptr=0xf60d64974fb0) = 252
+250   close(4<pipe:[1616059]> <unfinished ...>
+249   close(4<pipe:[1616059]> <unfinished ...>
+251   <... dup3 resumed>)               = 0<pipe:[1616059]>
+249   <... close resumed>)              = 0
+252   dup3(5<pipe:[1616060]>, 0</dev/null>, 0 <unfinished ...>
+250   <... close resumed>)              = 0
+249   close(3<pipe:[1616059]> <unfinished ...>
+252   <... dup3 resumed>)               = 0<pipe:[1616060]>
+251   dup3(6<pipe:[1616060]>, 1</dev/null>, 0 <unfinished ...>
+249   <... close resumed>)              = 0
+252   dup3(8<pipe:[1616061]>, 1</dev/null>, 0 <unfinished ...>
+250   close(5<pipe:[1616060]> <unfinished ...>
+249   close(6<pipe:[1616060]> <unfinished ...>
+252   <... dup3 resumed>)               = 1<pipe:[1616061]>
+251   <... dup3 resumed>)               = 1<pipe:[1616060]>
+249   <... close resumed>)              = 0
+252   close(3<pipe:[1616059]> <unfinished ...>
+250   <... close resumed>)              = 0
+249   close(5<pipe:[1616060]> <unfinished ...>
+252   <... close resumed>)              = 0
+251   close(3<pipe:[1616059]> <unfinished ...>
+249   <... close resumed>)              = 0
+252   close(4<pipe:[1616059]> <unfinished ...>
+250   close(6<pipe:[1616060]> <unfinished ...>
+249   close(8<pipe:[1616061]> <unfinished ...>
+252   <... close resumed>)              = 0
+251   <... close resumed>)              = 0
+249   <... close resumed>)              = 0
+252   close(5<pipe:[1616060]> <unfinished ...>
+250   <... close resumed>)              = 0
+249   openat(AT_FDCWD</work/project2_assignment/question1>, "result.txt", O_WRONLY|O_CREAT|O_TRUNC, 0644 <unfinished ...>
+252   <... close resumed>)              = 0
+251   close(4<pipe:[1616059]> <unfinished ...>
+249   <... openat resumed>)             = 3</work/project2_assignment/question1/result.txt>
+252   close(6<pipe:[1616060]> <unfinished ...>
+250   close(7<pipe:[1616061]> <unfinished ...>
+249   read(7<pipe:[1616061]>,  <unfinished ...>
+252   <... close resumed>)              = 0
+251   <... close resumed>)              = 0
+252   close(7<pipe:[1616061]> <unfinished ...>
+250   <... close resumed>)              = 0
+252   <... close resumed>)              = 0
+251   close(5<pipe:[1616060]> <unfinished ...>
+252   close(8<pipe:[1616061]> <unfinished ...>
+250   close(8<pipe:[1616061]> <unfinished ...>
+252   <... close resumed>)              = 0
+251   <... close resumed>)              = 0
+252   execve("/usr/local/sbin/sort", ["sort"], 0xffffdeb3bd48 /* 4 vars */ <unfinished ...>
+250   <... close resumed>)              = 0
+252   <... execve resumed>)             = -1 ENOENT (No such file or directory)
+251   close(6<pipe:[1616060]> <unfinished ...>
+252   execve("/usr/local/bin/sort", ["sort"], 0xffffdeb3bd48 /* 4 vars */ <unfinished ...>
+250   execve("/usr/local/sbin/cat", ["cat", "/etc/passwd"], 0xffffdeb3bd48 /* 4 vars */ <unfinished ...>
+252   <... execve resumed>)             = -1 ENOENT (No such file or directory)
+251   <... close resumed>)              = 0
+252   execve("/usr/sbin/sort", ["sort"], 0xffffdeb3bd48 /* 4 vars */ <unfinished ...>
+250   <... execve resumed>)             = -1 ENOENT (No such file or directory)
+252   <... execve resumed>)             = -1 ENOENT (No such file or directory)
+251   close(7<pipe:[1616061]> <unfinished ...>
+252   execve("/usr/bin/sort", ["sort"], 0xffffdeb3bd48 /* 4 vars */ <unfinished ...>
+250   execve("/usr/local/bin/cat", ["cat", "/etc/passwd"], 0xffffdeb3bd48 /* 4 vars */ <unfinished ...>
+251   <... close resumed>)              = 0
+250   <... execve resumed>)             = -1 ENOENT (No such file or directory)
+251   close(8<pipe:[1616061]> <unfinished ...>
+252   <... execve resumed>)             = 0
+250   execve("/usr/sbin/cat", ["cat", "/etc/passwd"], 0xffffdeb3bd48 /* 4 vars */ <unfinished ...>
+251   <... close resumed>)              = 0
+250   <... execve resumed>)             = -1 ENOENT (No such file or directory)
+251   execve("/usr/local/sbin/cut", ["cut", "-d:", "-f1"], 0xffffdeb3bd48 /* 4 vars */ <unfinished ...>
+250   execve("/usr/bin/cat", ["cat", "/etc/passwd"], 0xffffdeb3bd48 /* 4 vars */ <unfinished ...>
+251   <... execve resumed>)             = -1 ENOENT (No such file or directory)
+250   <... execve resumed>)             = 0
+252   openat(AT_FDCWD</work/project2_assignment/question1>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+251   execve("/usr/local/bin/cut", ["cut", "-d:", "-f1"], 0xffffdeb3bd48 /* 4 vars */ <unfinished ...>
+252   <... openat resumed>)             = 3</etc/ld.so.cache>
+251   <... execve resumed>)             = -1 ENOENT (No such file or directory)
+251   execve("/usr/sbin/cut", ["cut", "-d:", "-f1"], 0xffffdeb3bd48 /* 4 vars */) = -1 ENOENT (No such file or directory)
+252   close(3</etc/ld.so.cache> <unfinished ...>
+251   execve("/usr/bin/cut", ["cut", "-d:", "-f1"], 0xffffdeb3bd48 /* 4 vars */ <unfinished ...>
+252   <... close resumed>)              = 0
+250   openat(AT_FDCWD</work/project2_assignment/question1>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+252   openat(AT_FDCWD</work/project2_assignment/question1>, "/lib/aarch64-linux-gnu/libcrypto.so.3", O_RDONLY|O_CLOEXEC <unfinished ...>
+250   <... openat resumed>)             = 3</etc/ld.so.cache>
+252   <... openat resumed>)             = 3</usr/lib/aarch64-linux-gnu/libcrypto.so.3>
+251   <... execve resumed>)             = 0
+252   read(3</usr/lib/aarch64-linux-gnu/libcrypto.so.3>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+250   close(3</etc/ld.so.cache>)        = 0
+250   openat(AT_FDCWD</work/project2_assignment/question1>, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libc.so.6>
+250   read(3</usr/lib/aarch64-linux-gnu/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360\206\2\0\0\0\0\0"..., 832) = 832
+250   close(3</usr/lib/aarch64-linux-gnu/libc.so.6>) = 0
+250   openat(AT_FDCWD</work/project2_assignment/question1>, "/etc/passwd", O_RDONLY) = 3</etc/passwd>
+250   read(3</etc/passwd>, "root:x:0:0:root:/root:/bin/bash\n"..., 131072) = 1209
+250   write(1<pipe:[1616059]>, "root:x:0:0:root:/root:/bin/bash\n"..., 1209) = 1209
+250   read(3</etc/passwd>, "", 131072)  = 0
+250   close(3</etc/passwd>)             = 0
+251   openat(AT_FDCWD</work/project2_assignment/question1>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+250   close(1<pipe:[1616059]> <unfinished ...>
+251   <... openat resumed>)             = 3</etc/ld.so.cache>
+250   <... close resumed>)              = 0
+250   close(2<pipe:[1616018]>)          = 0
+250   exit_group(0 <unfinished ...>
+251   close(3</etc/ld.so.cache> <unfinished ...>
+250   <... exit_group resumed>)         = ?
+251   <... close resumed>)              = 0
+252   close(3</usr/lib/aarch64-linux-gnu/libcrypto.so.3> <unfinished ...>
+250   +++ exited with 0 +++
+249   <... read resumed>0xffffdeb3ab58, 4096) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+252   <... close resumed>)              = 0
+251   openat(AT_FDCWD</work/project2_assignment/question1>, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+249   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=250, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+252   openat(AT_FDCWD</work/project2_assignment/question1>, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+249   read(7<pipe:[1616061]>,  <unfinished ...>
+251   <... openat resumed>)             = 3</usr/lib/aarch64-linux-gnu/libc.so.6>
+252   <... openat resumed>)             = 3</usr/lib/aarch64-linux-gnu/libc.so.6>
+251   read(3</usr/lib/aarch64-linux-gnu/libc.so.6>,  <unfinished ...>
+252   read(3</usr/lib/aarch64-linux-gnu/libc.so.6>,  <unfinished ...>
+251   <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360\206\2\0\0\0\0\0"..., 832) = 832
+252   <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360\206\2\0\0\0\0\0"..., 832) = 832
+251   close(3</usr/lib/aarch64-linux-gnu/libc.so.6>) = 0
+252   close(3</usr/lib/aarch64-linux-gnu/libc.so.6>) = 0
+251   read(0<pipe:[1616059]>, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1209
+251   read(0<pipe:[1616059]>, "", 4096) = 0
+251   close(0<pipe:[1616059]>)          = 0
+251   write(1<pipe:[1616060]>, "root\ndaemon\nbin\nsys\nsync\ngames\nm"..., 171) = 171
+251   close(1<pipe:[1616060]>)          = 0
+251   close(2<pipe:[1616018]>)          = 0
+251   exit_group(0)                     = ?
+251   +++ exited with 0 +++
+249   <... read resumed>0xffffdeb3ab58, 4096) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+249   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=251, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+249   read(7<pipe:[1616061]>,  <unfinished ...>
+252   read(0<pipe:[1616060]>, "root\ndaemon\nbin\nsys\nsync\ngames\nm"..., 131072) = 171
+252   read(0<pipe:[1616060]>, "", 126976) = 0
+252   write(1<pipe:[1616061]>, "_apt\nbackup\nbin\ndaemon\ngames\nirc"..., 171 <unfinished ...>
+249   <... read resumed>"_apt\nbackup\nbin\ndaemon\ngames\nirc"..., 4096) = 171
+252   <... write resumed>)              = 171
+249   write(3</work/project2_assignment/question1/result.txt>, "_apt\nbackup\nbin\ndaemon\ngames\nirc"..., 171 <unfinished ...>
+252   close(0<pipe:[1616060]> <unfinished ...>
+249   <... write resumed>)              = 171
+252   <... close resumed>)              = 0
+249   read(7<pipe:[1616061]>,  <unfinished ...>
+252   close(1<pipe:[1616061]> <unfinished ...>
+249   <... read resumed>"", 4096)       = 0
+252   <... close resumed>)              = 0
+249   close(3</work/project2_assignment/question1/result.txt> <unfinished ...>
+252   close(2<pipe:[1616018]> <unfinished ...>
+249   <... close resumed>)              = 0
+252   <... close resumed>)              = 0
+249   close(7<pipe:[1616061]> <unfinished ...>
+252   exit_group(0 <unfinished ...>
+249   <... close resumed>)              = 0
+252   <... exit_group resumed>)         = ?
+249   openat(AT_FDCWD</work/project2_assignment/question1>, "result.txt", O_RDONLY <unfinished ...>
+252   +++ exited with 0 +++
+249   <... openat resumed>)             = 3</work/project2_assignment/question1/result.txt>
+249   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=252, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+249   read(3</work/project2_assignment/question1/result.txt>, "_apt\nbackup\nbin\ndaemon\ngames\nirc"..., 4096) = 171
+249   read(3</work/project2_assignment/question1/result.txt>, "", 4096) = 0
+249   close(3</work/project2_assignment/question1/result.txt>) = 0
+249   wait4(250, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 250
+249   wait4(251, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 251
+249   wait4(252, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 252
+249   write(1</dev/null>, "First 5 lines of result.txt:\n_ap"..., 207) = 207
+249   exit_group(0)                     = ?
+249   +++ exited with 0 +++

@@ -1,0 +1,16 @@
+CPUs: 2
+Run 1
+Single-threaded time: 0.035984 seconds
+Multi-threaded time:  0.022372 seconds
+Run 2
+Single-threaded time: 0.036246 seconds
+Multi-threaded time:  0.021569 seconds
+Run 3
+Single-threaded time: 0.038144 seconds
+Multi-threaded time:  0.021240 seconds
+Run 4
+Single-threaded time: 0.035472 seconds
+Multi-threaded time:  0.018476 seconds
+Run 5
+Single-threaded time: 0.035531 seconds
+Multi-threaded time:  0.019050 seconds

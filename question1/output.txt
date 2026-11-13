@@ -1,0 +1,10 @@
+First 5 lines of result.txt:
+_apt
+backup
+bin
+daemon
+games
+Total lines: 24
+Child 1 (cat, PID 236) exited with status 0
+Child 2 (cut, PID 237) exited with status 0
+Child 3 (sort, PID 238) exited with status 0

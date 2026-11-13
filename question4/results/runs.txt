@@ -1,0 +1,13 @@
+CPUs: 2
+1 threads, run 1: 0.110645 s
+1 threads, run 2: 0.113002 s
+1 threads, run 3: 0.109532 s
+2 threads, run 1: 0.058738 s
+2 threads, run 2: 0.057399 s
+2 threads, run 3: 0.055125 s
+4 threads, run 1: 0.057902 s
+4 threads, run 2: 0.059450 s
+4 threads, run 3: 0.058790 s
+8 threads, run 1: 0.062240 s
+8 threads, run 2: 0.060483 s
+8 threads, run 3: 0.055844 s

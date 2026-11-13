@@ -1,0 +1,8 @@
+question1/pipeline
+question2/copy_sys
+question2/copy_stdio
+question3/perfect
+question4/logscan
+*.bin
+*.o
+.DS_Store

@@ -1,0 +1,13 @@
+total 214064
+-rw-r--r-- 1 root root 52428867 Nov 13 22:38 app01.log
+-rw-r--r-- 1 root root  1048630 Nov 13 22:38 app02.log
+-rw-r--r-- 1 root root 31457302 Nov 13 22:38 app03.log
+-rw-r--r-- 1 root root  2097196 Nov 13 22:38 app04.log
+-rw-r--r-- 1 root root 41943076 Nov 13 22:38 app05.log
+-rw-r--r-- 1 root root  3145780 Nov 13 22:38 app06.log
+-rw-r--r-- 1 root root 26214466 Nov 13 22:38 app07.log
+-rw-r--r-- 1 root root  5242931 Nov 13 22:38 app08.log
+-rw-r--r-- 1 root root 20971527 Nov 13 22:38 app09.log
+-rw-r--r-- 1 root root  8388660 Nov 13 22:38 app10.log
+-rw-r--r-- 1 root root 15728647 Nov 13 22:38 app11.log
+-rw-r--r-- 1 root root 10485788 Nov 13 22:38 app12.log

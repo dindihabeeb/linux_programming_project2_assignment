@@ -1,0 +1,9 @@
+$ ./logscan ERROR report.txt 2 app02.log missing.log app04.log
+missing.log: No such file or directory
+Total matching lines across 2 files: 5639
+Elapsed time with 2 thread(s): 0.001704 seconds
+exit status: 0
+$ cat report.txt
+app02.log: 1819 matching lines out of 15275 (thread 2)
+app04.log: 3820 matching lines out of 30547 (thread 2)
+Total matching lines across 2 files: 5639

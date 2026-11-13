@@ -1,0 +1,12 @@
+$ grep -c ERROR app*.log | awk -F: '{sum += $2} END {print sum}'
+398743
+$ wc -l app*.log | tail -n 1
+  3192682 total
+$ tail -n 1 report_1.txt
+Total matching lines across 12 files: 398743
+$ tail -n 1 report_2.txt
+Total matching lines across 12 files: 398743
+$ tail -n 1 report_4.txt
+Total matching lines across 12 files: 398743
+$ tail -n 1 report_8.txt
+Total matching lines across 12 files: 398743

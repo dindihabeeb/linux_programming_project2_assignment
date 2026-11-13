@@ -1,0 +1,12 @@
+Perfect numbers found: 6 28 496 8128
+The synchronized total number of perfect numbers between 1 and 100000 is 4
+Single-threaded time: 0.034610 seconds
+Multi-threaded time:  0.026857 seconds
+Thread 1:      1 to  12500 used 0.002140 s of CPU
+Thread 2:  12501 to  25000 used 0.002915 s of CPU
+Thread 3:  25001 to  37500 used 0.004545 s of CPU
+Thread 4:  37501 to  50000 used 0.005168 s of CPU
+Thread 5:  50001 to  62500 used 0.006342 s of CPU
+Thread 6:  62501 to  75000 used 0.006031 s of CPU
+Thread 7:  75001 to  87500 used 0.006349 s of CPU
+Thread 8:  87501 to 100000 used 0.005717 s of CPU
